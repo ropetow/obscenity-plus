@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
 
   # Runtime dependencies
   s.add_runtime_dependency "rack", "~> 3.0"
-  s.add_runtime_dependency "activemodel", "~> 6.0"
+  s.add_runtime_dependency "activemodel", ">= 6.0", "< 9.0"
+
 end
 
 
