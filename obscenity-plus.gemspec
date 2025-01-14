@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = "obscenity-plus"
-  s.version       = "1.0.2"
+  s.version       = "1.0.3"
   s.summary       = "An updated profanity filter in Jan 2025. Forked from the Obscenity gem."
   s.description   = "Obscenity is a profanity filter gem for Ruby, Rails (through ActiveModel), and Rack middleware."
   s.authors       = ["Ropetow"]
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
 
   # Runtime dependencies
   s.add_runtime_dependency "rack", "~> 3.0"
-  s.add_runtime_dependency "activemodel", ">= 6.0", "< 9.0"
+  s.add_runtime_dependency "activemodel", "~> 8.0"
+
 
 end
 
