@@ -1,3 +1,4 @@
+#test_obscenity.rb
 require 'helper'
 
 class TestObscenity < Test::Unit::TestCase

@@ -39,7 +39,7 @@ module Obscenity
     def validate_list_content(content)
       case content
       when Array    then !content.empty?       || raise(Obscenity::EmptyContentList.new('Content array is empty.'))
-      when String   then File.exists?(content) || raise(Obscenity::UnkownContentFile.new("Content file can't be found."))
+      when String   then File.exist?(content) || raise(Obscenity::UnkownContentFile.new("Content file can't be found."))
       when Pathname then content.exist?        || raise(Obscenity::UnkownContentFile.new("Content file can't be found."))
       when Symbol   then content == :default   || raise(Obscenity::UnkownContent.new("The only accepted symbol is :default."))
       else

@@ -1,3 +1,4 @@
+#base.rb
 module Obscenity
   class Base
     class << self
@@ -21,7 +22,7 @@ module Obscenity
       def profane?(text)
         return(false) unless text.to_s.size >= 3
         blacklist.each do |foul|
-          return(true) if text =~ /\b#{foul}\b/i && !whitelist.include?(foul)
+          return(true) if text =~ /\b#{foul}(?!\w)/i && !whitelist.include?(foul)
         end
         false
       end

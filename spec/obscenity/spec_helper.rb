@@ -1,4 +1,4 @@
-#helper.rb
+#spec_helper.rb
 require 'rubygems'
 require 'bundler/setup'
 require 'rspec'
@@ -17,6 +17,9 @@ end
 
 # Configure RSpec
 RSpec.configure do |config|
+  # Use the documentation format for test output
+  config.default_formatter = 'doc' if config.files_to_run.one?
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end

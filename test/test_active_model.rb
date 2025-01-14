@@ -1,3 +1,4 @@
+#test_active_model.rb
 require 'helper'
 
 class TestActiveModel < Test::Unit::TestCase

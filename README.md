@@ -1,6 +1,6 @@
-# NOTE: This project is no longer maintened.
+# NOTE: This is a forked project. 
 
-# Obscenity [![Build Status](https://secure.travis-ci.org/tjackiw/obscenity.png)](http://travis-ci.org/tjackiw/obscenity)
+# Obscenity-plus: A work in progress. 
 
 Obscenity is a profanity filter gem for Ruby/Rubinius, Rails (through ActiveModel), and Rack middleware.
 
@@ -9,7 +9,7 @@ Obscenity is a profanity filter gem for Ruby/Rubinius, Rails (through ActiveMode
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'obscenity'
+gem 'obscenity-plus'
 ```
 
 And then execute:
@@ -21,12 +21,12 @@ bundle install
 Or install it yourself as:
 
 ```ruby
-gem install obscenity
+gem install obscenity-plus
 ```
 
 ## Compatibility
 
-Obscenity is compatible with Ruby 1.9.X, Ruby 2.0.X, Rubinius 1.9, Rails 3.X, and Rack as a middleware. Starting with Rails 3, the profanity validation works with any ORM supported by ActiveModel, e.g: ActiveRecord, MongoMapper, Mongoid, etc. 
+Obscenity is compatible is a work in progress. Aiming for rails 8+ and ruby 3+.
 
 ## Using Obscenity
 
@@ -293,5 +293,5 @@ user.username.should_not be_profane
 
 ## Copyright
 
-Copyright (c) 2012 Thiago Jackiw. See LICENSE.txt for further details.
+Copyright (c) 2025 Ropetow. See LICENSE.txt for further details.
 

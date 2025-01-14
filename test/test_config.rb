@@ -1,3 +1,4 @@
+#test_config.rb
 require 'helper'
 
 class TestConfig < Test::Unit::TestCase
