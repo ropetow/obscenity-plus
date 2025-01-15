@@ -1,15 +1,18 @@
 Gem::Specification.new do |s|
   s.name          = "obscenity-plus"
-  s.version       = "1.0.3"
+  s.version       = "1.0.5"
   s.summary       = "An updated profanity filter in Jan 2025. Forked from the Obscenity gem."
   s.description   = "Obscenity is a profanity filter gem for Ruby, Rails (through ActiveModel), and Rack middleware."
   s.authors       = ["Ropetow"]
   s.email         = "ropetow@outlook.com"
   s.homepage      = "http://github.com/ropetow/obscenity-plus"
   s.license       = "MIT"
-  s.required_ruby_version = ">= 2.7"
+  s.required_ruby_version = ">= 3.0"
 
-  s.files = Dir["{lib,config}/**/*", "README.md", "LICENSE.txt", "test/**/*"]
+  # Include only necessary gem files
+  s.files = Dir["lib/**/*", "config/**/*", "README.md", "LICENSE.txt"]
+
+  # Specify default load path
   s.require_paths = ["lib"]
 
   # Development dependencies
@@ -21,8 +24,5 @@ Gem::Specification.new do |s|
   # Runtime dependencies
   s.add_runtime_dependency "rack", "~> 3.0"
   s.add_runtime_dependency "activemodel", "~> 8.0"
-
-
 end
-
 

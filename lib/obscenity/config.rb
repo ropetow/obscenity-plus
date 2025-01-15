@@ -4,7 +4,7 @@ module Obscenity
     attr_accessor :replacement
     
     DEFAULT_WHITELIST = []
-    DEFAULT_BLACKLIST = File.dirname(__FILE__) + "/../../config/blacklist.yml"
+    DEFAULT_BLACKLIST = File.expand_path("../../config/blacklist.yml", __dir__)
     
     def initialize
       yield(self) if block_given?
